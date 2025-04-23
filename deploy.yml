@@ -1,0 +1,14 @@
+- name: Simulated Deployment
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Ensure prod directory exists
+      file:
+        path: ~/prod
+        state: directory
+
+    - name: Copy app files to prod
+      copy:
+        src: "/mnt/c/Users/kakha/Desktop/Devops Midterm Project/app/"
+        dest: ~/prod/app/
+
