@@ -1,4 +1,3 @@
-#!/bin/bash
 
 APP_NAME="app"
 DEPLOY_BASE=~/prod
@@ -16,7 +15,8 @@ fi
 # Create/clear target dir
 rm -rf "$TARGET"
 mkdir -p "$TARGET"
-cp -r /mnt/c/Users/kakha/Desktop/Devops\ Midterm\ Project/app "$TARGET/"
+cp -r "/mnt/c/Users/kakha/Desktop/Devops Midterm Project/app/" "$TARGET/"
+
 
 # Point symlink to new version
 rm -f "$CURRENT_LINK"
